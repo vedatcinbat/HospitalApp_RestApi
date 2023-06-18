@@ -1,4 +1,7 @@
-<h1>This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and ASP.NET Core - Web Api (REST)</h1>
+<html>
+
+  <body>
+    <h1>This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and ASP.NET Core - Web Api (REST)</h1>
 
 > There are 2 project called : HospitalWebApi and HospitalAppMvc
 
@@ -84,6 +87,12 @@
 > dotnet ef migrations add initial
   
 > dotnet ef database update
+  </body>
+</html>
+
+
+
+
   
   
 
