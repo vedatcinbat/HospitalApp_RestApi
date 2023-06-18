@@ -3,7 +3,7 @@ This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and A
 ** There are 2 project called : HospitalWebApi and HospitalAppMvc
 
 x HospitalWebApi has a HospitalsController.cs where we define our apis.
-O There are 5 api in HospitalsController
+x There are 5 api in HospitalsController
 
 * GET - localhost:..../api/hospitals : It returns all patients info from db
 * GET - localhost:..../api/hospitals/{id} : It returns one patient from db where p=> p.Id == id
@@ -14,20 +14,20 @@ O There are 5 api in HospitalsController
 
 
 x HospitalAppMvc has 1 controller : HomeController
--> Action 1 : Index() : It shows all patients info from our db
+o Action 1 : Index() : It shows all patients info from our db
 
 var response = await _httpClient.GetAsync("https://localhost:..../api/hospitals");
 var patients = await response.Content.ReadFromJsonAsync<List<Patient>>();
 
 return View(patients);
 
--> Action 2 : PostNewPatient(Patient patient) : It adds new patient to Patients table
+o Action 2 : PostNewPatient(Patient patient) : It adds new patient to Patients table
 
 var response = await _httpClient.PostAsJsonAsync("https://localhost:..../api/hospitals", patient);
   
 return RedirectToAction("Index");
 
--> Action 3 : GetPatient(int id) : It returns one patient from Patients table
+o Action 3 : GetPatient(int id) : It returns one patient from Patients table
 
 var patient = await _httpClient.GetAsync($"https://localhost:..../api/hospitals/{id}");
 
@@ -35,7 +35,7 @@ var patientInfo = await patient.Content.ReadFromJsonAsync<Patient>();
   
 return View(patientInfo);  
 
--> Action 4 : DeleteOnePatient(int id) : It removes patient from Patients table
+o Action 4 : DeleteOnePatient(int id) : It removes patient from Patients table
   
 var patient = await _httpClient.GetAsync($"https://localhost:..../api/hospitals/{id}");
 
@@ -45,7 +45,7 @@ await _httpClient.DeleteAsync($"https://localhost:7169/api/hospitals/{id}");
 
 return View(patientInfo)  
 
--> Action 5 : GetWithCountry(string country) : It shows all patients where their "patientFrom" value is equals to country that we catch FromRoute
+o Action 5 : GetWithCountry(string country) : It shows all patients where their "patientFrom" value is equals to country that we catch FromRoute
   
 var patients = await _httpClient.GetAsync($"https://localhost:7169/api/hospitals/{country}");
 
