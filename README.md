@@ -70,9 +70,9 @@
   "sqlConnection": "Data Source = ....; Initial Catalog = ....; Integrated Security = true; TrustServerCertificate = true"
 }
 
-* For creating database and updating database
+## For creating database and updating database
   
-* In HospitalWebApi project
+> In HospitalWebApi project
   
 * PMC
   
