@@ -18,10 +18,10 @@ x HospitalAppMvc has 1 controller : HomeController
 
 * Action 1 : Index() : It shows all patients info from our db
 
-var response = await _httpClient.GetAsync("https://localhost:..../api/hospitals");
-var patients = await response.Content.ReadFromJsonAsync<List<Patient>>();
+> var response = await _httpClient.GetAsync("https://localhost:..../api/hospitals");
+> var patients = await response.Content.ReadFromJsonAsync<List<Patient>>();
 
-return View(patients);
+> return View(patients);
 
 * Action 2 : PostNewPatient(Patient patient) : It adds new patient to Patients table
 
