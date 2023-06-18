@@ -14,7 +14,7 @@
 
 
 
-<h3>HospitalAppMvc has 1 controller : HomeController</h3> 
+<h3><b>HospitalAppMvc has 1 controller : HomeController</b></h3> 
 
 
 * Action 1 : Index() : It shows all patients info from our db
