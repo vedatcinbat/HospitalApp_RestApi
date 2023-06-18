@@ -2,8 +2,9 @@
 
 > There are 2 project called : HospitalWebApi and HospitalAppMvc
 
-< HospitalWebApi has a HospitalsController.cs where we define our apis.
-x There are 5 api in HospitalsController
+* HospitalWebApi has a HospitalsController.cs where we define our apis.
+
+* There are 5 api in HospitalsController
 
 * GET - localhost:..../api/hospitals : It returns all patients info from db
 * GET - localhost:..../api/hospitals/{id} : It returns one patient from db where p=> p.Id == id
