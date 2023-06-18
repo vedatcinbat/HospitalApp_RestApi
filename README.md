@@ -67,12 +67,17 @@ x HospitalAppMvc has 1 controller : HomeController
 }
 * For creating database and updating database
 * In HospitalWebApi project
-PMC
-  > Add-Migration initial -o Migrations
-  > Update-Database
-CLI
-  > dotnet ef migrations add initial
-  > dotnet ef database update
+* PMC
+  
+> Add-Migration initial -o Migrations
+
+> Update-Database
+  
+* CLI
+* 
+> dotnet ef migrations add initial
+  
+> dotnet ef database update
   
   
 
