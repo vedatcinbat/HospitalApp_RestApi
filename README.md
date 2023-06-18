@@ -62,11 +62,15 @@ x HospitalAppMvc has 1 controller : HomeController
 * Install Microsoft.EntityFrameworkCore.SqlServer
 * Reference "HospitalWebApi" to HospitalAppMvc for using requests
 * For MsSql Database Connection, you have to write your sqlConnection : HospitalWebApi>appsettings.json
-"ConnectionString": {
+  
+> "ConnectionString": {
   "sqlConnection": "Data Source = ....; Initial Catalog = ....; Integrated Security = true; TrustServerCertificate = true"
+
 }
+
 * For creating database and updating database
 * In HospitalWebApi project
+* 
 * PMC
   
 > Add-Migration initial -o Migrations
@@ -74,7 +78,7 @@ x HospitalAppMvc has 1 controller : HomeController
 > Update-Database
   
 * CLI
-* 
+  
 > dotnet ef migrations add initial
   
 > dotnet ef database update
