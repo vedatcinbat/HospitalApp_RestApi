@@ -1,7 +1,13 @@
 <html>
-
+<head>
+  <style>
+    .header {
+      color = blue;  
+    }
+  </style>
+</head>
   <body>
-    <h1>This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and ASP.NET Core - Web Api (REST)</h1>
+    <h1 class="header">This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and ASP.NET Core - Web Api (REST)</h1>
 
 > There are 2 project called : HospitalWebApi and HospitalAppMvc
 
