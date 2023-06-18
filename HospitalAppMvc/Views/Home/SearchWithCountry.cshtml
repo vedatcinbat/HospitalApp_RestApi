@@ -1,0 +1,21 @@
+
+
+
+<div>
+    <h2>Search Patient With Country Filter</h2>
+</div>
+
+
+
+<div>
+    <form asp-controller="Home" asp-action="GetWithCountry" method="get">
+        <select name="country" value="country">
+            <option name="Turkey" value="Turkey">Turkey</option>
+            <option name="UK" value="UK">UK</option>
+            <option name="United States" value="United States">United States</option>
+            <option name="France" value="France">France</option>
+            <option name="Spain" value="Spain">Spain</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+</div>

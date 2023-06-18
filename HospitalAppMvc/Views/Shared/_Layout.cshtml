@@ -1,0 +1,27 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     @RenderSection("style", false);
+    </head>
+    <body>
+
+       
+        <div class="btn-group">
+            <a asp-action="Index" class="btn btn-warning">All Patients</a>
+            <a asp-action="PostNewPatient"class="btn btn-primary">Add Patient</a>
+            <a asp-action="GetOnePatient" class="btn btn-primary">Get One Patient</a>
+            <a asp-action="DeletePatient" class="btn btn-primary">Delete One Patient</a>
+            <a asp-action="SearchWithCountry" class="btn btn-primary">Search Patients With Country</a>
+        </div>
+
+
+
+
+        <div>
+            @RenderBody()
+        </div>
+    </body>
+</html>

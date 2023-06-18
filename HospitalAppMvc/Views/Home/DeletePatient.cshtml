@@ -1,0 +1,38 @@
+@using HospitalWebApi.Models;
+
+@model List<Patient>
+
+
+<div>
+    <h2>All Patients</h2>
+    <table class="table text-center">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>FirstName</th>
+                <th>Surname</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var patient in Model) {
+                <tr>
+                    <td>@patient.Id</td>
+                    <td>@patient.patientName</td>
+                    <td>@patient.patientSurname</td>
+                    <td>@patient.patientFrom</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+
+
+
+<form asp-controller="Home" asp-action="DeleteOnePatient" method="get">
+        <label>Enter the id to get the patient info</label>
+        <input name = "id" type="number" placeholder="1" />
+        <button type="submit">Search</button>
+</form>
+

@@ -1,0 +1,78 @@
+@using HospitalWebApi.Models;
+
+@model List<Patient>
+
+
+
+
+@if(Model is not null) {
+<h2>Patients From @ViewBag.countryName - @Model.Count</h2>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var patient in Model) {
+            <tr>
+                <td>@patient.Id</td>
+                <td>@patient.patientName</td>
+                <td>@patient.patientSurname</td>
+                <td>@patient.patientFrom</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div>
+    <form asp-controller="Home" asp-action="GetWithCountry" method="get">
+        <select name="country" value="country">
+            <option name="Turkey" value="Turkey">Turkey</option>
+            <option name="UK" value="UK">UK</option>
+            <option name="United States" value="United States">United States</option>
+            <option name="France" value="France">France</option>
+            <option name="Spain" value="Spain">Spain</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+</div>
+
+
+}else {
+    <h2>Patients From @ViewBag.countryName - 0</h2>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Country</th>
+        </tr>
+    </thead>
+    
+</table>
+
+<div>
+    <form asp-controller="Home" asp-action="GetWithCountry" method="get">
+        <select name="country" value="country">
+            <option name="Turkey" value="Turkey">Turkey</option>
+            <option name="UK" value="UK">UK</option>
+            <option name="United States" value="United States">United States</option>
+            <option name="France" value="France">France</option>
+            <option name="Spain" value="Spain">Spain</option>
+        </select>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+</div>
+
+}
+
+
+
+

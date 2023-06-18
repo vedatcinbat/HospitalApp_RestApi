@@ -1,0 +1,18 @@
+﻿@model HospitalWebApi.Models.Patient
+
+
+<form asp-controller="Home" asp-action="PostNewPatient" method="post">
+    <div class="input-group">
+        <label asp-for="patientName" value="Name" />
+        <input asp-for="patientName" type="text" placeholder="Firstname" />
+    </div>
+    <div class="input-group">
+        <label asp-for="patientSurname" value="Name" />
+        <input asp-for="patientSurname" type="text" placeholder="Surname" />
+    </div>
+    <div class="input-group">
+        <label asp-for="patientFrom" value="Name" />
+        <input asp-for="patientFrom" type="text" placeholder="Country" />
+    </div>
+    <button type="submit">Add</button>
+</form>

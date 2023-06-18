@@ -1,0 +1,20 @@
+﻿@model HospitalWebApi.Models.Patient
+
+
+
+
+
+
+
+<form asp-controller="Home" asp-action="GetPatient" method="get">
+    <label asp-for="Id">Enter the id to get the patient info</label>
+    <input type="number" asp-for="Id" placeholder="1" />
+    <button type="submit">Search</button>
+</form>
+
+
+   <button>
+        <a asp-controller="Home" asp-action="Index">Get All Patients</a>
+   </button>
+
+
