@@ -56,7 +56,9 @@
 > var patientsList = await patients.Content.ReadFromJsonAsync<List<Patient>>();
 
 > return View(patientsList);  
-  
+
+## Packages You Have To Install To Your Project
+
 * Install Microsoft.EntityFrameworkCore 
 * Install Microsoft.EntityFrameworkCore.Design
 * Install Microsoft.EntityFrameworkCore.Tools
