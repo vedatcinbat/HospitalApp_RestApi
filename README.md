@@ -5,7 +5,7 @@ This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and A
 x HospitalWebApi has a HospitalsController.cs where we define our apis.
 x There are 5 api in HospitalsController
 
-> GET - localhost:..../api/hospitals : It returns all patients info from db
+* GET - localhost:..../api/hospitals : It returns all patients info from db
 > GET - localhost:..../api/hospitals/{id} : It returns one patient from db where p=> p.Id == id
 > POST - localhost:.../api/hospitals : It adds one patient to _context.Patients
 > DELETE - localhost:..../api/hospitals/{id} : It finds that patient and remove from table
