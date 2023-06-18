@@ -26,35 +26,35 @@ x HospitalAppMvc has 1 controller : HomeController
 
 * Action 2 : PostNewPatient(Patient patient) : It adds new patient to Patients table
 
-var response = await _httpClient.PostAsJsonAsync("https://localhost:..../api/hospitals", patient);
+> var response = await _httpClient.PostAsJsonAsync("https://localhost:..../api/hospitals", patient);
   
-return RedirectToAction("Index");
+> return RedirectToAction("Index");
 
 * Action 3 : GetPatient(int id) : It returns one patient from Patients table
 
-var patient = await _httpClient.GetAsync($"https://localhost:..../api/hospitals/{id}");
+> var patient = await _httpClient.GetAsync($"https://localhost:..../api/hospitals/{id}");
 
-var patientInfo = await patient.Content.ReadFromJsonAsync<Patient>();
+> var patientInfo = await patient.Content.ReadFromJsonAsync<Patient>();
   
-return View(patientInfo);  
+> return View(patientInfo);  
 
 * Action 4 : DeleteOnePatient(int id) : It removes patient from Patients table
   
-var patient = await _httpClient.GetAsync($"https://localhost:..../api/hospitals/{id}");
+> var patient = await _httpClient.GetAsync($"https://localhost:..../api/hospitals/{id}");
 
-var patientInfo = await patient.Content.ReadFromJsonAsync<Patient>();
+> var patientInfo = await patient.Content.ReadFromJsonAsync<Patient>();
 
-await _httpClient.DeleteAsync($"https://localhost:7169/api/hospitals/{id}");
+> await _httpClient.DeleteAsync($"https://localhost:7169/api/hospitals/{id}");
 
-return View(patientInfo)  
+> return View(patientInfo)  
 
 * Action 5 : GetWithCountry(string country) : It shows all patients where their "patientFrom" value is equals to country that we catch FromRoute
   
-var patients = await _httpClient.GetAsync($"https://localhost:7169/api/hospitals/{country}");
+> var patients = await _httpClient.GetAsync($"https://localhost:7169/api/hospitals/{country}");
 
-var patientsList = await patients.Content.ReadFromJsonAsync<List<Patient>>();
+> var patientsList = await patients.Content.ReadFromJsonAsync<List<Patient>>();
 
-return View(patientsList);  
+> return View(patientsList);  
   
 * Install Microsoft.EntityFrameworkCore 
 * Install Microsoft.EntityFrameworkCore.Design
