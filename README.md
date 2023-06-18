@@ -4,7 +4,8 @@
 
 * HospitalWebApi has a HospitalsController.cs where we define our apis.
 
-* There are 5 api in HospitalsController
+  
+<h3><b>There are 5 api in HospitalsController</b></h3> 
 
 * GET - localhost:..../api/hospitals : It returns all patients info from db
 * GET - localhost:..../api/hospitals/{id} : It returns one patient from db where p=> p.Id == id
