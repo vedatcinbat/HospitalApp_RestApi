@@ -2,7 +2,7 @@
  
 # This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and ASP.NET Core - Web Api (REST)
 
-> There are 2 project called : HospitalWebApi and HospitalAppMvc
+> There are 2 projects : HospitalWebApi and HospitalAppMvc
 
 ## There are 5 api in HospitalsController
 
