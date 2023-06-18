@@ -3,7 +3,7 @@ This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and A
 ** There are 2 project called : HospitalWebApi and HospitalAppMvc
 
 x HospitalWebApi has a HospitalsController.cs where we define our apis.
-x There are 5 api in HospitalsController
+O There are 5 api in HospitalsController
 
 * GET - localhost:..../api/hospitals : It returns all patients info from db
 * GET - localhost:..../api/hospitals/{id} : It returns one patient from db where p=> p.Id == id
