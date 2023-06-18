@@ -65,12 +65,12 @@ x HospitalAppMvc has 1 controller : HomeController
   
 > "ConnectionString": {
   "sqlConnection": "Data Source = ....; Initial Catalog = ....; Integrated Security = true; TrustServerCertificate = true"
-
 }
 
 * For creating database and updating database
+  
 * In HospitalWebApi project
-* 
+  
 * PMC
   
 > Add-Migration initial -o Migrations
