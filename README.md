@@ -17,10 +17,7 @@ x There are 5 api in HospitalsController
 * Install Microsoft.EntityFrameworkCore.Tools
 * Install Microsoft.EntityFrameworkCore.SqlServer
 * Reference "HospitalWebApi" to HospitalAppMvc for using requests
-* For MsSql Database Connection, you have to write your sqlConnection : HospitalWebApi>appsettings.json
-"ConnectionString": {
-  "sqlConnection": "Data Source = ....; Initial Catalog = ....; Integrated Security = true; TrustServerCertificate = true"
-}
+
 * For creating database and updating database
 * In HospitalWebApi project
 PMC
