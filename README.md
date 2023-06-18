@@ -1,13 +1,13 @@
 
-  <body>
-    <h1 class="header">This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and ASP.NET Core - Web Api (REST)</h1>
+ 
+# This is a Demo Hospital Website that built with ASP.NET Core MVC (6.0.100) and ASP.NET Core - Web Api (REST)
 
 > There are 2 project called : HospitalWebApi and HospitalAppMvc
 
 * HospitalWebApi has a HospitalsController.cs where we define our apis.
 
   
-<h3><b>There are 5 api in HospitalsController</b></h3> 
+There are 5 api in HospitalsController
 
 * GET - localhost:..../api/hospitals : It returns all patients info from db
 * GET - localhost:..../api/hospitals/{id} : It returns one patient from db where p=> p.Id == id
@@ -17,7 +17,7 @@
 
 
 
-<h3 style="background-color:black; color:white;"><b>HospitalAppMvc has 1 controller : HomeController</b></h3> 
+>HospitalAppMvc has 1 controller : HomeController
 
 
 * Action 1 : Index() : It shows all patients info from our db
@@ -86,7 +86,7 @@
 > dotnet ef migrations add initial
   
 > dotnet ef database update
-  </body>
+
 
 
 
