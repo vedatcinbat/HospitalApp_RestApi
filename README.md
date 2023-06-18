@@ -18,7 +18,8 @@ x HospitalAppMvc has 1 controller : HomeController
 
 * Action 1 : Index() : It shows all patients info from our db
 
-! var response = await _httpClient.GetAsync("https://localhost:..../api/hospitals");
+> var response = await _httpClient.GetAsync("https://localhost:..../api/hospitals");
+
 > var patients = await response.Content.ReadFromJsonAsync<List<Patient>>();
 
 > return View(patients);
