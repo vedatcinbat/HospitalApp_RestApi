@@ -21,11 +21,11 @@ x There are 5 api in HospitalsController
 * For creating database and updating database
 * In HospitalWebApi project
 PMC
-  > Add-Migration initial -o Migrations
-  > Update-Database
+  o Add-Migration initial -o Migrations
+  o Update-Database
 CLI
-  > dotnet ef migrations add initial
-  > dotnet ef database update
+  o dotnet ef migrations add initial
+  o dotnet ef database update
   
   
 
